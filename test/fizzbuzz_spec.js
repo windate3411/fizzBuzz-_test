@@ -12,4 +12,8 @@ describe('function add', function () {
     var result = fizzbuzz(15)
     result.should.be.equal('FizzBuzz')
   })
+  it('if none of above match, it should return the num', function () {
+    var result = fizzbuzz(14)
+    result.should.be.equal(14)
+  })
 })
